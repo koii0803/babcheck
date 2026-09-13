@@ -1,5 +1,6 @@
 {
   "name": "babcheck",
+  "account_id": "483a48f9c76d80012303cb3f6260c1bb",
   "compatibility_date": "2026-09-01",
   "assets": {
     "directory": "./dist",
