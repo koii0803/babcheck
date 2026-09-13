@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://babcheck.bobomusic83.workers.dev',
+  site: 'https://babcheck.com',
   trailingSlash: 'never',
   build: { format: 'file' },
   markdown: {
