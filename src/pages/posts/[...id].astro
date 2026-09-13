@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
-import { SITE, fmtDate } from '../../site';
+import { SITE, catName, fmtDate } from '../../site';
 export async function getStaticPaths() {
   const posts = (await getCollection('posts', ({ data }) => !data.draft))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { post, related } = Astro.props;
 const { Content } = await render(post);
 const d = post.data;
-const catName = SITE.categories[d.category] ?? d.category;
+const name = catName(d.category);
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -32,7 +32,7 @@ const jsonLd = {
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
 
   <header class="mx-auto max-w-3xl px-5 pt-14 md:pt-20">
-    <a href={`/category/${d.category}`} class="eyebrow hover:underline">{catName}</a>
+    <a href={`/category/${d.category}`} class="eyebrow hover:underline">{name}</a>
     <h1 class="serif mt-4 text-[2rem] font-bold leading-[1.25] md:text-[2.7rem]">{d.title}</h1>
     {d.description && <p class="mt-5 text-lg leading-relaxed text-ink-2">{d.description}</p>}
     <div class="mt-7 flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-line pt-5 text-sm text-ink-3">

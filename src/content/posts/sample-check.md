@@ -2,7 +2,7 @@
 title: 비타민 D, 하루 얼마나 먹어야 충분할까?
 description: 혈중 농도 기준과 하루 권장량, 음식으로 채울 수 있는 양을 식약처·보건복지부 수치로 정리했습니다. 표와 물결표 확인용 샘플 글입니다.
 pubDate: 2026-09-14
-category: sample
+category: fish
 thumbnail:
 draft: false
 ---

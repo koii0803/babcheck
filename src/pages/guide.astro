@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { SITE, CATEGORIES } from '../site';
+// 대도감(허브) 페이지 — 분류 5개로 내려가는 안내. 본문 원고는 사용자가 채운다.
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const byCat = (slug: string) =>
+  posts.filter((p) => p.data.category === slug).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 4);
+---
+<Base title="제철 수산·천연 식재료 대도감" description="국산 구별법, 손질·해감 공식, 산패 없는 보관 로드맵. 분류 5개로 나눠 안내합니다." image={SITE.ogImage}>
+  <section class="mx-auto max-w-3xl px-5 pt-14 md:pt-20">
+    <p class="eyebrow">Guide</p>
+    <h1 class="serif mt-3 text-[2.2rem] font-bold leading-tight md:text-[2.9rem]">제철 수산·천연 식재료 대도감</h1>
+    <p class="mt-5 text-lg leading-relaxed text-ink-2">국산 구별법, 손질·해감 공식, 산패 없는 보관까지. 아래 다섯 갈래로 나눠 정리합니다. 각 글은 공공기관 수치와 출처를 답니다.</p>
+  </section>
+
+  <section class="mx-auto mt-12 max-w-6xl space-y-6 px-5">
+    {Object.entries(CATEGORIES).map(([slug, c], i) => {
+      const list = byCat(slug);
+      return (
+        <div class="card grid overflow-hidden md:grid-cols-[2fr_3fr]">
+          <a href={`/category/${slug}`} class="relative block aspect-video overflow-hidden md:aspect-auto">
+            <img src={c.image} alt="" class="h-full w-full object-cover" loading="lazy" />
+          </a>
+          <div class="p-7 md:p-9">
+            <p class="eyebrow">{String(i + 1).padStart(2, '0')}</p>
+            <h2 class="serif mt-2 text-2xl font-bold"><a href={`/category/${slug}`} class="hover:text-moss">{c.name}</a></h2>
+            <p class="mt-3 leading-relaxed text-ink-2">{c.desc}</p>
+            {list.length > 0 ? (
+              <ul class="mt-5 space-y-2 border-t border-line pt-5 text-[0.95rem]">
+                {list.map((p) => <li><a href={`/posts/${p.id}`} class="text-ink hover:text-moss">{p.data.title}</a></li>)}
+              </ul>
+            ) : (
+              <p class="mt-5 border-t border-line pt-5 text-sm text-ink-3">준비 중입니다.</p>
+            )}
+            <a href={`/category/${slug}`} class="mt-5 inline-block text-sm font-semibold text-moss hover:underline">{c.name} 전체 보기 →</a>
+          </div>
+        </div>
+      );
+    })}
+  </section>
+</Base>

@@ -2,11 +2,11 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
-import { SITE } from '../../site';
+import { CATEGORIES, catName } from '../../site';
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
-  const cats = [...new Set(posts.map((p) => p.data.category))];
-  return cats.map((category) => ({
+  const slugs = new Set([...Object.keys(CATEGORIES), ...posts.map((p) => p.data.category)]);
+  return [...slugs].map((category) => ({
     params: { category },
     props: {
       posts: posts
@@ -17,15 +17,30 @@ export async function getStaticPaths() {
 }
 const { category } = Astro.params;
 const { posts } = Astro.props;
-const name = SITE.categories[category] ?? category;
+const c = CATEGORIES[category];
+const name = catName(category);
 ---
-<Base title={name} description={`${name} 글 모음`}>
-  <section class="mx-auto max-w-6xl px-5 pt-14 md:pt-20">
-    <p class="eyebrow">Category</p>
-    <h1 class="serif mt-3 text-[2.2rem] font-bold md:text-[2.8rem]">{name}</h1>
-    <p class="mt-3 text-ink-3">{posts.length}편</p>
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {posts.map((post) => <PostCard post={post} />)}
-    </div>
+<Base title={name} description={c?.desc ?? `${name} 글 모음`} image={c?.image}>
+  {c && (
+    <section class="relative overflow-hidden border-b border-line">
+      <img src={c.image} alt="" class="absolute inset-0 h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-paper via-paper/85 to-paper/20"></div>
+      <div class="relative mx-auto max-w-6xl px-5 py-16 md:py-24">
+        <p class="eyebrow">Category</p>
+        <h1 class="serif mt-3 text-[2.2rem] font-bold md:text-[2.9rem]">{c.name}</h1>
+        <p class="mt-4 max-w-xl leading-relaxed text-ink-2">{c.desc}</p>
+        <p class="mt-4 text-sm text-ink-3">{posts.length}편</p>
+      </div>
+    </section>
+  )}
+  <section class="mx-auto max-w-6xl px-5 pt-12">
+    {!c && <h1 class="serif mb-8 text-[2.2rem] font-bold">{name}</h1>}
+    {posts.length === 0 ? (
+      <p class="text-ink-2">준비 중입니다.</p>
+    ) : (
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    )}
   </section>
 </Base>
