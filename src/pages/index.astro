@@ -27,7 +27,9 @@ const heroCss = `
 @keyframes heroFade{0%{opacity:0;transform:scale(1)}${pct(F)}%{opacity:1}${pct(D)}%{opacity:1}${pct(D + F)}%{opacity:0;transform:scale(1.06)}100%{opacity:0;transform:scale(1)}}
 .hero-copy{grid-area:1/1;opacity:0;animation:copyFade ${T2}s linear infinite;will-change:opacity,transform}
 @keyframes copyFade{0%{opacity:0;transform:translateY(10px)}${pct2(F2)}%{opacity:1;transform:none}${pct2(D2 - F2)}%{opacity:1;transform:none}${pct2(D2)}%{opacity:0;transform:translateY(-10px)}100%{opacity:0;transform:translateY(10px)}}
-@media (prefers-reduced-motion:reduce){.hero-slide,.hero-copy{animation:none}.hero-slide:first-child{opacity:1}.hero-copy:first-child{opacity:1}}
+.btn-flow{background:linear-gradient(100deg,#0b5443,#0f6b55,#4c9877,#0f6b55,#0b5443);background-size:300% 100%;animation:btnFlow 5s ease-in-out infinite alternate}
+@keyframes btnFlow{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+@media (prefers-reduced-motion:reduce){.hero-slide,.hero-copy,.btn-flow{animation:none}.hero-slide:first-child{opacity:1}.hero-copy:first-child{opacity:1}}
 `;
 ---
 <Base>
@@ -64,7 +66,7 @@ const heroCss = `
       </div>
       <div class="mt-7 flex flex-wrap gap-3">
         <a href="/guide" class="rounded-full bg-moss px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-moss-2">대도감</a>
-        <a href="#latest" class="rounded-full bg-gradient-to-r from-[#0b5443] via-[#0f6b55] to-[#3f8f6e] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:brightness-110">최신 글</a>
+        <a href="#latest" class="btn-flow rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:brightness-110">최신 글</a>
       </div>
     </div>
   </section>
