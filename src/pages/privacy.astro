@@ -1,15 +1,31 @@
 ---
 import Page from '../layouts/Page.astro';
 import { SITE } from '../site';
-// TODO: 사용자 원고(첨부파일)로 교체
 ---
-<Page title="개인정보처리방침" eyebrow="Privacy" description={`${SITE.title} 개인정보처리방침`}>
-  <p>{SITE.title}는 회원가입을 받지 않으며 이용자의 개인정보를 직접 수집·저장하지 않습니다.</p>
-  <h2>쿠키와 광고</h2>
-  <p>본 사이트는 Google AdSense를 통해 광고를 게재할 수 있습니다. Google을 비롯한 제3자 광고 사업자는 쿠키를 사용해 이용자의 관심사에 맞는 광고를 표시할 수 있습니다. 이용자는 <a href="https://www.google.com/settings/ads" rel="nofollow">Google 광고 설정</a>에서 맞춤 광고를 해제할 수 있습니다.</p>
-  <h2>방문 통계</h2>
-  <p>본 사이트는 Google Analytics를 이용해 방문 통계를 수집할 수 있습니다. 수집되는 정보는 익명 처리되며 개인을 식별하지 않습니다.</p>
-  <h2>문의</h2>
-  <p>개인정보 관련 문의: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
-  <p>시행일: 2026-09-14</p>
+<Page title="개인정보처리방침" eyebrow="Privacy" description="본 사이트의 이용자 개인정보 처리 및 쿠키 사용에 관한 안내입니다.">
+  <p>{SITE.title}(이하 "본 사이트")는 이용자의 개인정보를 중요시하며, 개인정보보호법 및 Google을 포함한 제3자 서비스 제공업체의 정책을 준수합니다.</p>
+
+  <h2>1. 수집하는 정보 및 수집 목적</h2>
+  <p>본 사이트는 회원가입 없이 이용 가능한 정적 정보 사이트로서, 이름·연락처·주민등록번호 등 개인 식별 정보를 수집하거나 저장하지 않습니다. 다만 서비스 개선과 통계 분석을 위해 비식별 접속 정보가 수집될 수 있습니다.</p>
+
+  <h2>2. 쿠키(Cookie) 및 로그 데이터</h2>
+  <ol>
+    <li><strong>로그 데이터</strong> — 방문자의 브라우저 종류, 방문 일시, 참조 페이지, 체류 시간 등의 정보는 트래픽 분석과 서비스 안정성 유지를 위해서만 사용됩니다.</li>
+    <li><strong>Google 애널리틱스</strong> — 방문 통계 분석 도구인 Google Analytics를 사용해 비식별 방문 통계를 수집할 수 있습니다. 수집 정보는 익명 처리되며 개인을 식별하지 않습니다.</li>
+  </ol>
+
+  <h2>3. 제3자 광고 사업자(Google AdSense) 관련 규정</h2>
+  <ul>
+    <li>Google을 포함한 제3자 벤더는 쿠키를 사용하여 이용자의 본 사이트 또는 다른 웹사이트 방문 기록을 바탕으로 광고를 게재합니다.</li>
+    <li>Google의 광고 쿠키 사용으로 Google 및 그 파트너는 이용자의 인터넷 방문 기록을 바탕으로 맞춤형 광고를 게재할 수 있습니다.</li>
+    <li>이용자는 <a href="https://www.google.com/settings/ads" rel="nofollow">Google 광고 설정</a>에서 개인 맞춤 광고에 사용되는 쿠키를 비활성화할 수 있으며, <a href="https://www.aboutads.info" rel="nofollow">www.aboutads.info</a>에서 제3자 벤더의 쿠키 사용을 거부할 수 있습니다.</li>
+  </ul>
+
+  <h2>4. 개인정보 보호책임자 및 시행 일자</h2>
+  <ul>
+    <li><strong>담당</strong>: {SITE.title} 개인정보 관리 담당자</li>
+    <li><strong>문의</strong>: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
+    <li><strong>시행 일자</strong>: 2026년 9월 14일</li>
+  </ul>
+  <p>본 방침이 변경되는 경우 이 페이지를 통해 고지하며, 변경된 방침은 고지한 날부터 적용됩니다.</p>
 </Page>
