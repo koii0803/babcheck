@@ -3,7 +3,7 @@ export const SITE = {
   title: '밥체크',
   tagline: '먹기 전에 한 번, 숫자로 확인',
   description: '제철 수산물과 천연 식재료, 먹기 전에 숫자로 확인합니다.',
-  url: 'https://babcheck.bobomusic83.workers.dev',
+  url: 'https://babcheck.com',
   lang: 'ko',
   email: 'contact@example.com', // 연락처 원고 받으면 교체
   ogImage: '/img/og-default.jpg',
