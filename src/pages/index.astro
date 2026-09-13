@@ -12,10 +12,22 @@ const thumbs = posts.map((p) => p.data.thumbnail).filter((t): t is string => !!t
 const heroImgs = [...new Set([...thumbs, ...heroPool])].slice(0, 10);
 const D = 7, F = 1.8, T = heroImgs.length * D; // 장당 7초, 겹침 전환 1.8초
 const pct = (s: number) => +((s / T) * 100).toFixed(3);
+// 히어로 문구 회전: 5종. 첫 번째만 h1(검색용), 나머지는 장식.
+const heroCopy = [
+  { h: '먹기 전에 한 번, 숫자로 확인', p: '제철 수산물과 천연 식재료, 먹기 전에 숫자로 확인합니다.' },
+  { h: '몸에 좋다는 말 대신, 100g당 숫자', p: '효능 소문보다 식약처 영양성분 데이터를 먼저 봅니다.' },
+  { h: '제철 밥상, 근거 있는 선택', p: '계절마다 오르는 재료를 공인 수치로 따져 고릅니다.' },
+  { h: '같은 재료도 가공이 다르면 다른 음식', p: '생것과 말린 것, 청과 즙의 차이를 표로 비교합니다.' },
+  { h: '오늘 재료의 진짜 값, 표로 확인', p: '단백질·나트륨·당류, 궁금한 숫자만 골라 봅니다.' },
+];
+const D2 = 7, F2 = 1.4, T2 = heroCopy.length * D2;
+const pct2 = (s: number) => +((s / T2) * 100).toFixed(3);
 const heroCss = `
 .hero-slide{opacity:0;animation:heroFade ${T}s linear infinite;will-change:opacity,transform}
 @keyframes heroFade{0%{opacity:0;transform:scale(1)}${pct(F)}%{opacity:1}${pct(D)}%{opacity:1}${pct(D + F)}%{opacity:0;transform:scale(1.06)}100%{opacity:0;transform:scale(1)}}
-@media (prefers-reduced-motion:reduce){.hero-slide{animation:none}.hero-slide:first-child{opacity:1}}
+.hero-copy{grid-area:1/1;opacity:0;animation:copyFade ${T2}s linear infinite;will-change:opacity,transform}
+@keyframes copyFade{0%{opacity:0;transform:translateY(10px)}${pct2(F2)}%{opacity:1;transform:none}${pct2(D2 - F2)}%{opacity:1;transform:none}${pct2(D2)}%{opacity:0;transform:translateY(-10px)}100%{opacity:0;transform:translateY(10px)}}
+@media (prefers-reduced-motion:reduce){.hero-slide,.hero-copy{animation:none}.hero-slide:first-child{opacity:1}.hero-copy:first-child{opacity:1}}
 `;
 ---
 <Base>
@@ -38,8 +50,18 @@ const heroCss = `
     <div class="absolute inset-0 bg-paper/85 md:bg-transparent md:bg-gradient-to-r md:from-paper md:via-paper/75 md:to-paper/10"></div>
     <div class="relative mx-auto max-w-6xl px-5 py-14 md:py-32">
       <p class="eyebrow">Seasonal Seafood · Natural Ingredients</p>
-      <h1 class="serif mt-4 max-w-2xl break-keep text-[2.2rem] font-bold leading-[1.12] md:text-[3.6rem]">{SITE.tagline}</h1>
-      <p class="mt-4 max-w-lg text-[1.05rem] leading-relaxed text-ink-2 md:text-lg">{SITE.description}</p>
+      <div class="mt-4 grid">
+        {heroCopy.map((c, i) => (
+          <div class="hero-copy" style={`animation-delay:${i * D2 - F2}s`} aria-hidden={i === 0 ? undefined : 'true'}>
+            {i === 0 ? (
+              <h1 class="serif max-w-2xl break-keep text-[2.2rem] font-bold leading-[1.12] md:text-[3.6rem]">{c.h}</h1>
+            ) : (
+              <p class="serif max-w-2xl break-keep text-[2.2rem] font-bold leading-[1.12] md:text-[3.6rem]">{c.h}</p>
+            )}
+            <p class="mt-4 max-w-lg text-[1.05rem] leading-relaxed text-ink-2 md:text-lg">{c.p}</p>
+          </div>
+        ))}
+      </div>
       <div class="mt-7 flex flex-wrap gap-3">
         <a href="/guide" class="rounded-full bg-moss px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-moss-2">대도감</a>
         <a href="#latest" class="rounded-full border border-ink/15 bg-white/70 px-5 py-2.5 text-sm font-semibold text-ink backdrop-blur hover:bg-white">최신 글</a>
