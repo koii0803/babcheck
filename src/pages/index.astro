@@ -6,11 +6,35 @@ import CategoryStrip from '../components/CategoryStrip.astro';
 import { SITE } from '../site';
 const posts = await getPublished();
 const counts = posts.reduce((m, p) => ((m[p.data.category] = (m[p.data.category] ?? 0) + 1), m), {} as Record<string, number>);
+// 히어로 회전: 최신 글 대표이미지(최대 5장) + 기본 풀 10장에서 총 10장. 글이 쌓이면 앞자리가 글 이미지로 바뀐다.
+const heroPool = Array.from({ length: 10 }, (_, i) => `/img/hero/hero-${String(i + 1).padStart(2, '0')}.webp`);
+const thumbs = posts.map((p) => p.data.thumbnail).filter((t): t is string => !!t).slice(0, 5);
+const heroImgs = [...new Set([...thumbs, ...heroPool])].slice(0, 10);
+const D = 7, F = 1.8, T = heroImgs.length * D; // 장당 7초, 겹침 전환 1.8초
+const pct = (s: number) => +((s / T) * 100).toFixed(3);
+const heroCss = `
+.hero-slide{opacity:0;animation:heroFade ${T}s linear infinite;will-change:opacity,transform}
+@keyframes heroFade{0%{opacity:0;transform:scale(1)}${pct(F)}%{opacity:1}${pct(D)}%{opacity:1}${pct(D + F)}%{opacity:0;transform:scale(1.06)}100%{opacity:0;transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.hero-slide{animation:none}.hero-slide:first-child{opacity:1}}
+`;
 ---
 <Base>
   <!-- 히어로 -->
   <section class="relative overflow-hidden border-b border-line">
-    <img src="/img/hero.webp" alt="" class="absolute inset-0 h-full w-full object-cover object-right" fetchpriority="high" />
+    <style is:inline set:html={heroCss}></style>
+    <div class="absolute inset-0" aria-hidden="true">
+      {heroImgs.map((src, i) => (
+        <img
+          src={src}
+          alt=""
+          class="hero-slide absolute inset-0 h-full w-full object-cover object-right"
+          style={`animation-delay:${i * D - F}s`}
+          loading={i === 0 ? 'eager' : 'lazy'}
+          decoding="async"
+          fetchpriority={i === 0 ? 'high' : 'auto'}
+        />
+      ))}
+    </div>
     <div class="absolute inset-0 bg-paper/85 md:bg-transparent md:bg-gradient-to-r md:from-paper md:via-paper/75 md:to-paper/10"></div>
     <div class="relative mx-auto max-w-6xl px-5 py-14 md:py-32">
       <p class="eyebrow">Seasonal Seafood · Natural Ingredients</p>
