@@ -1,12 +1,9 @@
 ---
-import Base from '../layouts/Base.astro';
+import Page from '../layouts/Page.astro';
 import { SITE } from '../site';
 // TODO: 사용자 원고(첨부파일)로 교체
 ---
-<Base title="소개" description={`${SITE.title} 소개`}>
-  <article class="prose prose-neutral max-w-none">
-    <h1>소개</h1>
-    <p>{SITE.title}는 식재료와 음식의 효능·주의점을 공공기관 자료와 수치를 근거로 정리하는 정보 사이트입니다.</p>
-    <p>모든 글은 출처를 명시하며, 특정 제품이나 서비스를 홍보하지 않습니다.</p>
-  </article>
-</Base>
+<Page title="소개" eyebrow="About" description={`${SITE.title} 소개`}>
+  <p>{SITE.title}는 식재료와 음식의 효능·주의점을 공공기관 자료와 수치를 근거로 정리하는 정보 사이트입니다.</p>
+  <p>모든 글은 출처를 명시하며, 특정 제품이나 서비스를 홍보하지 않습니다.</p>
+</Page>

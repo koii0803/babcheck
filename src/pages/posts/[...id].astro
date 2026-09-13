@@ -1,15 +1,19 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { SITE } from '../../site';
+import PostCard from '../../components/PostCard.astro';
+import { SITE, fmtDate } from '../../site';
 export async function getStaticPaths() {
-  const posts = await getCollection('posts', ({ data }) => !data.draft);
-  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+  const posts = (await getCollection('posts', ({ data }) => !data.draft))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post, related: posts.filter((p) => p.id !== post.id && p.data.category === post.data.category).slice(0, 3) },
+  }));
 }
-const { post } = Astro.props;
+const { post, related } = Astro.props;
 const { Content } = await render(post);
 const d = post.data;
-const date = d.pubDate.toISOString().slice(0, 10);
 const catName = SITE.categories[d.category] ?? d.category;
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -26,12 +30,43 @@ const jsonLd = {
 ---
 <Base title={d.title} description={d.description} image={d.thumbnail} type="article" pubDate={d.pubDate} updatedDate={d.updatedDate}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
-  <article class="prose prose-neutral max-w-none">
-    <p class="text-xs text-neutral-500">
-      <a href={`/category/${d.category}`}>{catName}</a> · <time datetime={date}>{date}</time>
-    </p>
-    <h1>{d.title}</h1>
-    {d.thumbnail && <img src={d.thumbnail} alt={d.title} loading="eager" />}
-    <Content />
-  </article>
+
+  <header class="mx-auto max-w-3xl px-5 pt-14 md:pt-20">
+    <a href={`/category/${d.category}`} class="eyebrow hover:underline">{catName}</a>
+    <h1 class="serif mt-4 text-[2rem] font-bold leading-[1.25] md:text-[2.7rem]">{d.title}</h1>
+    {d.description && <p class="mt-5 text-lg leading-relaxed text-ink-2">{d.description}</p>}
+    <div class="mt-7 flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-line pt-5 text-sm text-ink-3">
+      <span>{SITE.title}</span>
+      <span aria-hidden="true">·</span>
+      <time datetime={d.pubDate.toISOString()}>{fmtDate(d.pubDate)}</time>
+      {d.updatedDate && <><span aria-hidden="true">·</span><span>수정 {fmtDate(d.updatedDate)}</span></>}
+    </div>
+  </header>
+
+  {d.thumbnail && (
+    <figure class="mx-auto mt-10 max-w-4xl px-5">
+      <img src={d.thumbnail} alt={d.title} class="w-full rounded-2xl border border-line object-cover" loading="eager" />
+    </figure>
+  )}
+
+  <div class="mx-auto max-w-3xl px-5 pt-8">
+    <article class="article">
+      <Content />
+    </article>
+  </div>
+
+  <aside class="mx-auto mt-14 max-w-3xl px-5">
+    <div class="rounded-2xl border border-line bg-white px-6 py-5 text-sm leading-relaxed text-ink-2">
+      이 글은 일반 정보 제공 목적이며 진단·치료·처방을 대신하지 않습니다. 질병이 있거나 약을 복용 중이면 식단을 바꾸기 전에 의사·약사와 상담하세요.
+    </div>
+  </aside>
+
+  {related.length > 0 && (
+    <section class="mx-auto mt-20 max-w-6xl px-5">
+      <h2 class="serif mb-6 text-2xl font-bold">같이 볼 글</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {related.map((p) => <PostCard post={p} />)}
+      </div>
+    </section>
+  )}
 </Base>

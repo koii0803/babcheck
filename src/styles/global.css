@@ -1,10 +1,90 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-html { scroll-behavior: smooth; }
-body { @apply bg-white text-neutral-900 antialiased; }
+@theme {
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-serif: "Noto Serif KR", "Apple SD Gothic Neo", serif;
+  --color-ink: #1b1a17;
+  --color-ink-2: #55524b;
+  --color-ink-3: #8a867d;
+  --color-paper: #faf8f3;
+  --color-paper-2: #f1ede4;
+  --color-line: #e6e1d6;
+  --color-moss: #0f6b55;
+  --color-moss-2: #0b5443;
+  --color-moss-soft: #e3efe9;
+}
 
-/* 본문 표: 모바일에서 가로 스크롤 */
-.prose table { @apply block w-full overflow-x-auto text-sm; }
-.prose table thead th { @apply bg-neutral-100 whitespace-nowrap; }
-.prose h2 { @apply mt-10 border-l-4 border-emerald-500 pl-3; }
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+  font-feature-settings: "ss01", "cv01";
+  letter-spacing: -0.01em;
+}
+::selection { background: var(--color-moss-soft); }
+
+.serif { font-family: var(--font-serif); letter-spacing: -0.02em; }
+.eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-moss; }
+.card {
+  @apply rounded-2xl border border-line bg-white transition duration-300;
+  box-shadow: 0 1px 2px rgba(27, 26, 23, 0.04);
+}
+.card:hover { box-shadow: 0 14px 40px -18px rgba(27, 26, 23, 0.25); transform: translateY(-2px); }
+.thumb-fallback {
+  background:
+    radial-gradient(120% 90% at 0% 0%, #dcebe3 0%, transparent 55%),
+    radial-gradient(100% 80% at 100% 100%, #f3e9d4 0%, transparent 55%),
+    var(--color-paper-2);
+}
+
+/* ----- 본문 ----- */
+.article {
+  @apply prose prose-lg max-w-none;
+  --tw-prose-body: var(--color-ink);
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-links: var(--color-moss);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-quotes: var(--color-ink-2);
+  --tw-prose-quote-borders: var(--color-moss);
+  --tw-prose-hr: var(--color-line);
+  --tw-prose-th-borders: var(--color-line);
+  --tw-prose-td-borders: var(--color-line);
+  line-height: 1.85;
+  word-break: keep-all;
+}
+.article p { @apply my-5; }
+.article h2 {
+  @apply font-serif mt-14 mb-5 text-[1.55rem] leading-snug font-bold relative pl-4; letter-spacing: -0.02em;
+}
+.article h2::before {
+  content: "";
+  @apply absolute left-0 top-[0.35em] h-[0.9em] w-1 rounded-full bg-moss;
+}
+.article h3 { @apply mt-9 mb-3 text-xl font-bold; }
+.article a { @apply underline decoration-moss/40 underline-offset-4 hover:decoration-moss; }
+.article strong { @apply font-semibold; }
+.article blockquote { @apply not-italic bg-white rounded-xl border border-line border-l-4 border-l-moss px-6 py-4 my-8; }
+.article blockquote p { @apply my-0; }
+.article ul > li::marker { color: var(--color-moss); }
+.article img { @apply rounded-2xl border border-line my-8; }
+
+/* 표: 카드형, 모바일 가로 스크롤 */
+.article table {
+  @apply block w-full overflow-x-auto my-8 text-[0.95rem] leading-relaxed;
+  border-collapse: separate; border-spacing: 0;
+}
+.article table thead th {
+  @apply bg-paper-2 text-ink font-semibold whitespace-nowrap px-4 py-3 text-left;
+}
+.article table tbody td { @apply px-4 py-3 align-top border-t border-line; }
+.article table tbody tr:nth-child(even) td { background: #fcfbf8; }
+.article table thead th:first-child { border-top-left-radius: 12px; }
+.article table thead th:last-child { border-top-right-radius: 12px; }
+.article table tbody tr:last-child td:first-child { border-bottom-left-radius: 12px; }
+.article table tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
+.article table tbody td:first-child, .article table thead th:first-child { border-left: 1px solid var(--color-line); }
+.article table tbody td:last-child, .article table thead th:last-child { border-right: 1px solid var(--color-line); }
+.article table tbody tr:last-child td { border-bottom: 1px solid var(--color-line); }
+.article table thead th { border-top: 1px solid var(--color-line); }

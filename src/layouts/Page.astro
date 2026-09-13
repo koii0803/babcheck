@@ -1,0 +1,14 @@
+---
+import Base from './Base.astro';
+interface Props { title: string; description?: string; eyebrow?: string }
+const { title, description, eyebrow } = Astro.props;
+---
+<Base title={title} description={description}>
+  <section class="mx-auto max-w-3xl px-5 pt-14 md:pt-20">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h1 class="serif mt-3 text-[2.2rem] font-bold leading-tight md:text-[2.8rem]">{title}</h1>
+    <div class="article mt-8">
+      <slot />
+    </div>
+  </section>
+</Base>
