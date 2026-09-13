@@ -1,20 +1,26 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import CategoryStrip from '../components/CategoryStrip.astro';
 import { SITE, CATEGORIES } from '../site';
-// 대도감(허브) 페이지 — 분류 5개로 내려가는 안내. 본문 원고는 사용자가 채운다.
+// 대도감(허브) 페이지. 본문 원고는 사용자가 채운다.
 const posts = await getCollection('posts', ({ data }) => !data.draft);
+const counts = posts.reduce((m, p) => ((m[p.data.category] = (m[p.data.category] ?? 0) + 1), m), {} as Record<string, number>);
 const byCat = (slug: string) =>
   posts.filter((p) => p.data.category === slug).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 4);
 ---
-<Base title="제철 수산·천연 식재료 대도감" description="국산 구별법, 손질·해감 공식, 산패 없는 보관 로드맵. 분류 5개로 나눠 안내합니다." image={SITE.ogImage}>
-  <section class="mx-auto max-w-3xl px-5 pt-14 md:pt-20">
+<Base title="대도감" description="제철 수산물과 천연 식재료를 다섯 갈래로 나눠 안내합니다." image={SITE.ogImage}>
+  <section class="mx-auto max-w-6xl px-5 pt-10 md:pt-20">
     <p class="eyebrow">Guide</p>
-    <h1 class="serif mt-3 text-[2.2rem] font-bold leading-tight md:text-[2.9rem]">제철 수산·천연 식재료 대도감</h1>
-    <p class="mt-5 text-lg leading-relaxed text-ink-2">국산 구별법, 손질·해감 공식, 산패 없는 보관까지. 아래 다섯 갈래로 나눠 정리합니다. 각 글은 공공기관 수치와 출처를 답니다.</p>
+    <h1 class="serif mt-3 break-keep text-[2rem] font-bold leading-tight md:text-[2.9rem]">대도감</h1>
+    <p class="mt-4 max-w-2xl text-[1.02rem] leading-relaxed text-ink-2 md:text-lg">제철 수산물과 천연 식재료를 다섯 갈래로 나눴습니다. 궁금한 쪽을 고르세요.</p>
+    <div class="mt-8">
+      <CategoryStrip counts={counts} />
+    </div>
   </section>
 
-  <section class="mx-auto mt-12 max-w-6xl space-y-6 px-5">
+  <!-- PC 상세 카드 -->
+  <section class="mx-auto mt-12 hidden max-w-6xl space-y-6 px-5 md:block">
     {Object.entries(CATEGORIES).map(([slug, c], i) => {
       const list = byCat(slug);
       return (
@@ -38,5 +44,18 @@ const byCat = (slug: string) =>
         </div>
       );
     })}
+  </section>
+
+  <!-- 모바일: 분류별 한 줄 설명 -->
+  <section class="mx-auto mt-8 max-w-6xl space-y-2 px-5 md:hidden">
+    {Object.entries(CATEGORIES).map(([slug, c]) => (
+      <a href={`/category/${slug}`} class="card flex items-center gap-3 p-3">
+        <img src={c.image} alt="" class="h-12 w-12 shrink-0 rounded-xl object-cover" loading="lazy" />
+        <span class="min-w-0">
+          <span class="block text-sm font-bold">{c.name}</span>
+          <span class="mt-0.5 block truncate text-xs text-ink-2">{c.desc}</span>
+        </span>
+      </a>
+    ))}
   </section>
 </Base>

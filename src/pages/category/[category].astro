@@ -38,7 +38,7 @@ const name = catName(category);
     {posts.length === 0 ? (
       <p class="text-ink-2">준비 중입니다.</p>
     ) : (
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
         {posts.map((post) => <PostCard post={post} />)}
       </div>
     )}

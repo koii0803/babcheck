@@ -1,0 +1,29 @@
+---
+// 모바일: 둥근 아이콘 5개 한 줄. PC: 사진 타일 5개.
+import { CATEGORIES } from '../site';
+const { counts = {} as Record<string, number>, showCount = true } = Astro.props;
+const entries = Object.entries(CATEGORIES);
+---
+<div class="grid grid-cols-5 gap-2 md:hidden">
+  {entries.map(([slug, c]) => (
+    <a href={`/category/${slug}`} class="flex flex-col items-center gap-1.5 text-center">
+      <span class="block h-14 w-14 overflow-hidden rounded-full border-2 border-white shadow-md ring-1 ring-line">
+        <img src={c.image} alt="" class="h-full w-full object-cover" loading="lazy" />
+      </span>
+      <span class="break-keep text-[11px] font-semibold leading-tight text-ink">{c.short}</span>
+      {showCount && <span class="text-[10px] text-ink-3">{counts[slug] ?? 0}</span>}
+    </a>
+  ))}
+</div>
+<div class="hidden gap-4 md:grid md:grid-cols-5">
+  {entries.map(([slug, c]) => (
+    <a href={`/category/${slug}`} class="card group relative aspect-[3/4] overflow-hidden">
+      <img src={c.image} alt="" class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent"></div>
+      <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+        <p class="serif text-lg font-bold leading-tight">{c.name}</p>
+        {showCount && <p class="mt-1 text-xs text-white/75">{counts[slug] ?? 0}편</p>}
+      </div>
+    </a>
+  ))}
+</div>
