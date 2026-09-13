@@ -1,11 +1,11 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { render } from 'astro:content';
+import { getPublished } from '../../lib/posts';
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
 import { SITE, catName, catImage, fmtDate } from '../../site';
 export async function getStaticPaths() {
-  const posts = (await getCollection('posts', ({ data }) => !data.draft))
-    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const posts = await getPublished();
   return posts.map((post) => ({
     params: { id: post.id },
     props: { post, related: posts.filter((p) => p.id !== post.id && p.data.category === post.data.category).slice(0, 3) },
@@ -56,7 +56,15 @@ const jsonLd = {
     </article>
   </div>
 
-  <aside class="mx-auto mt-14 max-w-3xl px-5">
+  {d.tags.length > 0 && (
+    <nav class="mx-auto mt-10 max-w-3xl px-5">
+      <ul class="flex flex-wrap gap-2">
+        {d.tags.map((t) => <li><a href={`/tag/${t}`} class="inline-block rounded-full border border-line bg-white px-3 py-1 text-xs text-ink-2 hover:border-moss hover:text-moss">#{t}</a></li>)}
+      </ul>
+    </nav>
+  )}
+
+  <aside class="mx-auto mt-10 max-w-3xl px-5">
     <div class="rounded-2xl border border-line bg-white px-6 py-5 text-sm leading-relaxed text-ink-2">
       이 글은 일반 정보 제공 목적이며 진단·치료·처방을 대신하지 않습니다. 질병이 있거나 약을 복용 중이면 식단을 바꾸기 전에 의사·약사와 상담하세요.
     </div>

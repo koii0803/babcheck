@@ -1,11 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
+import { getPublished } from '../lib/posts';
 import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import CategoryStrip from '../components/CategoryStrip.astro';
 import { SITE } from '../site';
-const posts = (await getCollection('posts', ({ data }) => !data.draft))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = await getPublished();
 const counts = posts.reduce((m, p) => ((m[p.data.category] = (m[p.data.category] ?? 0) + 1), m), {} as Record<string, number>);
 ---
 <Base>

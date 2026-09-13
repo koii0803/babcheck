@@ -88,3 +88,7 @@ body {
 .article table tbody td:last-child, .article table thead th:last-child { border-right: 1px solid var(--color-line); }
 .article table tbody tr:last-child td { border-bottom: 1px solid var(--color-line); }
 .article table thead th { border-top: 1px solid var(--color-line); }
+
+/* 광고 자리: 코드 들어가기 전엔 안 보임 */
+.ad-slot:empty { display: none; }
+.ad-slot { @apply my-8; }

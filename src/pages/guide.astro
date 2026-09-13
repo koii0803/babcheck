@@ -1,10 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
+import { getPublished } from '../lib/posts';
 import Base from '../layouts/Base.astro';
 import CategoryStrip from '../components/CategoryStrip.astro';
 import { SITE, CATEGORIES } from '../site';
 // 대도감(허브) 페이지. 본문 원고는 사용자가 채운다.
-const posts = await getCollection('posts', ({ data }) => !data.draft);
+const posts = await getPublished();
 const counts = posts.reduce((m, p) => ((m[p.data.category] = (m[p.data.category] ?? 0) + 1), m), {} as Record<string, number>);
 const byCat = (slug: string) =>
   posts.filter((p) => p.data.category === slug).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 4);
