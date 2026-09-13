@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { SITE } from '../../site';
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  const cats = [...new Set(posts.map((p) => p.data.category))];
+  return cats.map((category) => ({
+    params: { category },
+    props: {
+      posts: posts
+        .filter((p) => p.data.category === category)
+        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+    },
+  }));
+}
+const { category } = Astro.params;
+const { posts } = Astro.props;
+const name = SITE.categories[category] ?? category;
+---
+<Base title={name} description={`${name} 글 모음`}>
+  <h1 class="text-2xl font-bold mb-4">{name}</h1>
+  {posts.map((post) => <PostCard post={post} />)}
+</Base>

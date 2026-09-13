@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-neutral-900 antialiased; }
+
+/* 본문 표: 모바일에서 가로 스크롤 */
+.prose table { @apply block w-full overflow-x-auto text-sm; }
+.prose table thead th { @apply bg-neutral-100 whitespace-nowrap; }
+.prose h2 { @apply mt-10 border-l-4 border-emerald-500 pl-3; }

@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site';
+// TODO: 사용자 원고(첨부파일)로 교체
+---
+<Base title="개인정보처리방침" description={`${SITE.title} 개인정보처리방침`}>
+  <article class="prose prose-neutral max-w-none">
+    <h1>개인정보처리방침</h1>
+    <p>{SITE.title}는 회원가입을 받지 않으며 이용자의 개인정보를 직접 수집·저장하지 않습니다.</p>
+    <h2>쿠키와 광고</h2>
+    <p>본 사이트는 Google AdSense를 통해 광고를 게재할 수 있습니다. Google을 비롯한 제3자 광고 사업자는 쿠키를 사용해 이용자의 관심사에 맞는 광고를 표시할 수 있습니다. 이용자는 <a href="https://www.google.com/settings/ads" rel="nofollow">Google 광고 설정</a>에서 맞춤 광고를 해제할 수 있습니다.</p>
+    <h2>방문 통계</h2>
+    <p>본 사이트는 Google Analytics를 이용해 방문 통계를 수집할 수 있습니다. 수집되는 정보는 익명 처리되며 개인을 식별하지 않습니다.</p>
+    <h2>문의</h2>
+    <p>개인정보 관련 문의: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+    <p>시행일: 2026-09-14</p>
+  </article>
+</Base>

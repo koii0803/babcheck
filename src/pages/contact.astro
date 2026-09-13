@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site';
+// TODO: 사용자 원고(첨부파일)로 교체, SITE.email 실제 주소로 교체
+---
+<Base title="문의" description={`${SITE.title} 문의`}>
+  <article class="prose prose-neutral max-w-none">
+    <h1>문의</h1>
+    <p>글 내용 정정, 제휴, 기타 문의는 아래 이메일로 보내주세요.</p>
+    <p><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+  </article>
+</Base>

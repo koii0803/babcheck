@@ -1,0 +1,15 @@
+---
+import { SITE } from '../site';
+const { post } = Astro.props;
+const catName = SITE.categories[post.data.category] ?? post.data.category;
+const date = post.data.pubDate.toISOString().slice(0, 10);
+---
+<article class="py-4 border-b border-neutral-100">
+  <a href={`/posts/${post.id}`} class="block group">
+    <h2 class="text-lg font-semibold group-hover:underline">{post.data.title}</h2>
+    {post.data.description && <p class="mt-1 text-neutral-600 line-clamp-2">{post.data.description}</p>}
+  </a>
+  <p class="mt-2 text-xs text-neutral-500">
+    <a href={`/category/${post.data.category}`} class="hover:underline">{catName}</a> · <time datetime={date}>{date}</time>
+  </p>
+</article>

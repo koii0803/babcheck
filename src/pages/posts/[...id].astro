@@ -1,0 +1,37 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../site';
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+const d = post.data;
+const date = d.pubDate.toISOString().slice(0, 10);
+const catName = SITE.categories[d.category] ?? d.category;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.title,
+  description: d.description,
+  datePublished: d.pubDate.toISOString(),
+  ...(d.updatedDate && { dateModified: d.updatedDate.toISOString() }),
+  ...(d.thumbnail && { image: new URL(d.thumbnail, Astro.site).toString() }),
+  author: { '@type': 'Organization', name: SITE.title },
+  publisher: { '@type': 'Organization', name: SITE.title },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).toString(),
+};
+---
+<Base title={d.title} description={d.description} image={d.thumbnail} type="article" pubDate={d.pubDate} updatedDate={d.updatedDate}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <article class="prose prose-neutral max-w-none">
+    <p class="text-xs text-neutral-500">
+      <a href={`/category/${d.category}`}>{catName}</a> · <time datetime={date}>{date}</time>
+    </p>
+    <h1>{d.title}</h1>
+    {d.thumbnail && <img src={d.thumbnail} alt={d.title} loading="eager" />}
+    <Content />
+  </article>
+</Base>
