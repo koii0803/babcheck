@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://babcheck.bobomusic83.workers.dev/sitemap-index.xml
+Sitemap: https://babcheck.com/sitemap-index.xml
