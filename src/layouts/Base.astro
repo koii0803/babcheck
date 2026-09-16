@@ -40,6 +40,17 @@ const year = new Date().getFullYear();
     <meta name="twitter:card" content="summary_large_image" />
     {type === 'article' && pubDate && <meta property="article:published_time" content={pubDate.toISOString()} />}
     {type === 'article' && updatedDate && <meta property="article:modified_time" content={updatedDate.toISOString()} />}
+    <!-- Google Analytics 4 (GA4). ClientRouter 페이지 전환마다 page_view 전송 -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QXS81ZWYLT"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QXS81ZWYLT', { send_page_view: false });
+      document.addEventListener('astro:page-load', () => {
+        gtag('event', 'page_view', { page_location: location.href, page_title: document.title });
+      });
+    </script>
     <ClientRouter />
     <slot name="head" />
   </head>
