@@ -1,7 +1,7 @@
 ---
 title: "봄도다리 회가 제일 맛있다는 말, 산란기 자료로 보면 맞나"
 description: ""
-pubDate: 2026-09-19
+pubDate: 2026-09-17
 category: fish
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/spring-flounder-sashimi-spawning-season/spring-flounder-sashimi-spawning-season-main.webp
 tags: ["도다리회", "봄도다리", "도다리회제철", "도다리제철", "도다리산란기", "문치가자미", "문치가자미산란기", "도다리쑥국", "도다리칼로리", "도다리영양", "강도다리", "이달의수산물", "가자미회", "봄제철회", "도다리고르는법"]

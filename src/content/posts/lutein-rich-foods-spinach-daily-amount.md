@@ -1,7 +1,7 @@
 ---
 title: "루테인 많은 음식은 무엇이고 하루 10mg은 시금치 몇 g인가"
 description: ""
-pubDate: 2026-09-20
+pubDate: 2026-09-17
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/lutein-rich-foods-spinach-daily-amount/lutein-rich-foods-spinach-daily-amount-main.webp
 tags: ["루테인", "루테인많은음식", "루테인식품", "루테인하루섭취량", "루테인시금치", "루테인달걀", "루테인흡수", "루테인지아잔틴", "루테인주의사항", "시금치효능", "케일효능", "황반변성예방", "황반색소밀도", "눈에좋은음식", "AREDS2"]

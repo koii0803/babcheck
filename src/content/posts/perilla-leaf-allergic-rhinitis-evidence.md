@@ -1,7 +1,7 @@
 ---
 title: "차조기 잎이 알레르기 비염에 효과 있다는 근거는 무엇인가"
 description: ""
-pubDate: 2026-09-19
+pubDate: 2026-09-17
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/perilla-leaf-allergic-rhinitis-evidence/perilla-leaf-allergic-rhinitis-evidence-main.webp
 tags: ["차조기잎", "차조기잎효능", "차조기효능", "자소엽효능", "차조기추출물", "로즈마린산", "알레르기비염", "알레르기비염근거", "계절성알레르기비염", "비염에좋은음식", "알레르기검사", "항원검사", "항히스타민제", "차조기잎차", "비염관리"]
