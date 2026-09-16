@@ -5,7 +5,7 @@ export const SITE = {
   description: '제철 수산물과 천연 식재료, 먹기 전에 숫자로 확인합니다.',
   url: 'https://babcheck.com',
   lang: 'ko',
-  email: 'contact@example.com', // 연락처 원고 받으면 교체
+  email: 'support@babcheck.com',
   ogImage: '/img/og-default.jpg',
 };
 
