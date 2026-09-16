@@ -75,10 +75,6 @@ draft: false
 
 ![홍어를 살 때 무엇을 확인해야 하나요?](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/skate-vs-stingray-wing-difference/skate-vs-stingray-wing-difference-2.webp)
 
-![홍어를 살 때 무엇을 확인해야 하나요?](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/skate-vs-stingray-wing-difference/skate-vs-stingray-wing-difference-2.webp)
-
-![홍어를 살 때 무엇을 확인해야 하나요?](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/skate-vs-stingray-wing-difference/skate-vs-stingray-wing-difference-2.webp)
-
 국내 생산량이 1992년 약 3,400톤에서 2000년 이후 500톤 아래로 떨어져 수입 물량이 늘었다는 점도 같은 자료에 나옵니다. 홍어와 가오리는 손질해서 날개살만 담아 놓으면 형태 단서가 대부분 사라집니다. 값이 유난히 싼 국내산 표시를 만나면 원산지와 어종 표시를 확인하고, 손질된 날개살만 놓고 판단하기 어렵다면 통째로 보관된 상태를 보여 달라고 하는 편이 낫습니다.
 
 ## 자주 묻는 질문

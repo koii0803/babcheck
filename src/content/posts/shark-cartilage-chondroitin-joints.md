@@ -60,8 +60,6 @@ draft: false
 
 ![콘드로이친을 먹을 때 주의할 점은 무엇인가요?](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/shark-cartilage-chondroitin-joints/shark-cartilage-chondroitin-joints-2.webp)
 
-![콘드로이친을 먹을 때 주의할 점은 무엇인가요?](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/shark-cartilage-chondroitin-joints/shark-cartilage-chondroitin-joints-2.webp)
-
 국립보완통합보건센터는 대규모 연구에서 중대한 안전성 문제가 확인되지 않았다고 하면서도, 와파린과 함께 쓰면 출혈 위험이 커진다는 점과 글루코사민이 일부에서 혈당을 올릴 수 있다는 점을 함께 적고 있습니다. 상어연골 제품이든 다른 원료든 이 주의사항은 기능성분 기준으로 똑같이 적용됩니다.
 
 ## 6. 상어고기는 얼마나 먹어도 되나요?
