@@ -106,6 +106,8 @@ A. 피꼬막은 방사륵이 42줄 안팎으로 가장 많고 크기도 큽니�
 
 식품의약품안전처 식품영양성분데이터베이스<br>해양수산부 수산물안전정보서비스 수산물 이야기 꼬막<br>식품의약품안전처 비브리오패혈증균 예측시스템<br>위키트리 2025년 참꼬막 새꼬막 피꼬막 구별법<br>미국 식품의약국 Selecting and Serving Fresh and Frozen Seafood Safely
 
+함께 읽기: [대수리 삶는법, 몇 분이 아니라 85℃가 기준인 이유는?](/posts/daesuri-sea-snail-boiling-temperature) / [고둥 삶는법과 먹는 방법, 몇 분 삶아야 질기지 않나](/posts/sea-snail-boiling-time-how-to-eat) / [고둥회 먹기 전 타액선을 떼야 하는 이유는 무엇인가](/posts/sea-snail-sashimi-salivary-gland-tetramine)
+
 ## 출처
 
 - <https://various.foodsafetykorea.go.kr/nutrient/>

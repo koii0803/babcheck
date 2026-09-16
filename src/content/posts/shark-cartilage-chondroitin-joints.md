@@ -93,6 +93,8 @@ A. 국립보완통합보건센터가 소개한 2018년 분석에서는 두 성�
 
 상어연골이라고 적힌 제품을 고를 때는 원료 이름 대신 기능성분이 콘드로이친으로서 1,200mg인지를 먼저 확인하고, 항응고제를 쓰고 있다면 복용 사실을 담당 의료진에게 미리 알려 두는 순서가 안전합니다.
 
+함께 읽기: [홍어 효능, 삭힌 홍어의 암모니아는 몸에 해롭지 않나](/posts/fermented-skate-ammonia-safety) / [홍어 가오리 차이, 날개살 모양으로 구별하는 법](/posts/skate-vs-stingray-wing-difference) / [철갑상어 캐비아 말고 살은 어떻게 먹나, 일반 상어고기와 뭐가 다른가](/posts/sturgeon-meat-vs-shark-meat)
+
 ## 출처
 
 - [식품안전나라 건강기능식품 관절 건강 기능성 정보](https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/functionalityView.do?menu_grp=MENU_NEW01&menu_no=2657&viewNo=03)

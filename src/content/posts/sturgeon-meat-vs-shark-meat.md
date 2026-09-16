@@ -105,6 +105,8 @@ A. 종에 따라 갈립니다. 철갑상어는 100g당 4.04g이고, 별상어는
 
 철갑상어 살은 한 토막을 구워 비타민D와 단백질을 채우는 쪽으로 쓰고, 캐비아는 1큰술 단위로 끊어 나트륨을 계산하는 쪽으로 나눠 두면 같은 생선에서 나온 두 재료를 따로 다룰 수 있습니다.
 
+함께 읽기: [홍어 가오리 차이, 날개살 모양으로 구별하는 법](/posts/skate-vs-stingray-wing-difference) / [홍어 효능, 삭힌 홍어의 암모니아는 몸에 해롭지 않나](/posts/fermented-skate-ammonia-safety) / [상어연골 콘드로이친 관절에 효과 있나, 상어고기 먹어도 같은 성분 얻나](/posts/shark-cartilage-chondroitin-joints)
+
 ## 출처
 
 - [국립생물자원관 한반도의 생물다양성 철갑상어](https://species.nibr.go.kr/species-detail/120000057395)

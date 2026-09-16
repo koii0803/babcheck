@@ -93,6 +93,8 @@ A. 국내 생산량이 줄었기 때문입니다. 1992년 약 3,400톤이던 생
 
 홍어와 가오리를 날개살로 고를 때는 마름모 형태와 좌우로 퍼진 폭을 먼저 보고, 손질된 상태라 형태가 남아 있지 않으면 원산지와 어종 표시를 확인하는 순서로 가면 됩니다.
 
+함께 읽기: [홍어 효능, 삭힌 홍어의 암모니아는 몸에 해롭지 않나](/posts/fermented-skate-ammonia-safety) / [상어연골 콘드로이친 관절에 효과 있나, 상어고기 먹어도 같은 성분 얻나](/posts/shark-cartilage-chondroitin-joints) / [철갑상어 캐비아 말고 살은 어떻게 먹나, 일반 상어고기와 뭐가 다른가](/posts/sturgeon-meat-vs-shark-meat)
+
 ## 출처
 
 - [한국수산과학회지 2015 울릉도산 참홍어의 관능 및 영양 특성](https://koreascience.kr/article/JAKO201523348321449.pdf)
