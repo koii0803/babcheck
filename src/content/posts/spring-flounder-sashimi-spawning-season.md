@@ -47,6 +47,8 @@ draft: false
 
 **도다리 회 100g은 86kcal, 단백질 19.52g, 지방 0.36g, 나트륨 67mg이다.** 식약처 식품영양성분 데이터베이스 기준이며 같은 출처의 강도다리는 118kcal에 단백질 17.88g, 지방 4.5g이다. 미국 농무부 기준 넙치와 서대류 평균은 70kcal, 단백질 12.4g, 지방 1.93g이다. 기름기가 그 종의 12분의 1이라 회 맛의 차이는 기름보다 살의 탄력에서 난다.
 
+![도다리 회 100g의 영양은 어떤가](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/spring-flounder-sashimi-spawning-season/spring-flounder-sashimi-spawning-season-2.webp)
+
 | 100g당 | 원래 종 | 강도다리 | 넙치와 서대류 평균 |
 | --- | --- | --- | --- |
 | 에너지 | 86kcal | 118kcal | 70kcal |

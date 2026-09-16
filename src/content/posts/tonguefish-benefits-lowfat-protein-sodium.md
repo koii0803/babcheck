@@ -3,7 +3,7 @@ title: "박대 효능은 저지방 고단백인가, 반건조 박대 나트륨�
 description: "박대 효능의 핵심은 저지방 고단백이다. 식약처 식품영양성분 데이터베이스 기준 생것 100g당 단백질 19.16g, 지방 0.7g, 열량 90kcal이며, 국립수산과학원 서해수산연구소 조사에서 서해산 개체의 비만도는 9월에 최대였다. 반건조는 같은 양에 나트륨 1,394mg이 들어 세계보건기구 하루 상한 2,000mg의 70%에 이른다."
 pubDate: 2026-09-17
 category: fish
-thumbnail:
+thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tonguefish-benefits-lowfat-protein-sodium/tonguefish-benefits-lowfat-protein-sodium-main.webp
 tags: ["박대효능", "박대영양성분", "박대제철", "박대칼로리", "박대단백질", "반건조박대나트륨", "말린박대칼륨", "군산박대구이", "박대산란기", "저지방고단백생선", "박대연어비교", "박대구이", "박대조림", "생선단백질", "문전박대유래"]
 notion_id: 3ddaa6915752813391b8d2749380a4fe
 draft: false
@@ -13,6 +13,8 @@ draft: false
 ## 1. 반건조와 말린 것은 날것과 무엇이 다른가
 
 **말리는 정도에 따라 열량은 90kcal에서 132kcal까지 오른다.** 식약처 데이터베이스에서 생것은 90kcal, 단백질 19.16g, 지방 0.7g, 칼슘 15mg이고 반건조는 104kcal, 21.4g, 1.4g, 103mg, 말린 것은 132kcal, 25.6g, 2.2g, 60mg이다. 수분이 빠진 만큼 숫자가 오르고, 칼슘은 중간 단계에서 가장 높다. 날것 대비 증감으로 다시 놓으면 아래 표다.
+
+![반건조와 말린 것은 날것과 무엇이 다른가](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tonguefish-benefits-lowfat-protein-sodium/tonguefish-benefits-lowfat-protein-sodium-1.webp)
 
 | 성분 | 날것 → 반건조 | 날것 → 말린 것 |
 | --- | --- | --- |
@@ -36,6 +38,8 @@ draft: false
 ## 4. 박대 효능을 더 챙기려면 어느 형태로 먹어야 하는가
 
 **칼슘까지 보면 반건조(103mg)가, 짠 것을 줄여야 하면 생것이 맞다.** 같은 데이터베이스로 그쪽에는 칼륨 253mg도 있고, 군산 향토음식으로 자리 잡은 구이 정식은 이것을 구운 것이다. 날것을 구이나 조림으로 먹으면 단백질 19g짜리 반찬이 된다. 반쯤 말린 것을 골랐다면 조리 때 소금이나 간장을 따로 넣지 않는 것이 표의 염분 숫자를 그대로 두는 방법이다. 단, 어느 쪽이든 단백질 반찬이라는 점은 같다.
+
+![박대 효능을 더 챙기려면 어느 형태로 먹어야 하는가](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tonguefish-benefits-lowfat-protein-sodium/tonguefish-benefits-lowfat-protein-sodium-2.webp)
 
 ## 5. 반건조 100g당 나트륨은 하루 상한의 몇 %인가
 
