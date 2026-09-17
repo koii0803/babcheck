@@ -1,6 +1,6 @@
 ---
 title: "두부 100g 한 끼 대두 이소플라본 함량, 식약처 기준 채워지나"
-description: ""
+description: "두부 100g 한 끼의 대두 이소플라본 함량은 30mg으로, 식약처가 건강기능식품에 정한 하루 섭취량 24~27mg을 한 끼에 넘긴다."
 pubDate: 2026-09-18
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tofu-soy-isoflavone-per-serving/tofu-soy-isoflavone-per-serving-main.webp

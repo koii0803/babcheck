@@ -1,6 +1,6 @@
 ---
 title: "우뭇가사리 효능, 12주에 1.5kg 더 빠진다는 근거는 뭔가?"
-description: ""
+description: "당뇨비만대사학회지 2005년 무작위 배정 시험에서 기존 식단에 한천을 더한 군은 12주 뒤 체중이 2.8kg 줄어 일반 식단군 1.3kg보다 1.5kg 더 빠졌다."
 pubDate: 2026-09-17
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/agar-gelidium-weight-loss-evidence/agar-gelidium-weight-loss-evidence-main.webp

@@ -1,6 +1,6 @@
 ---
 title: "루테인 많은 음식은 무엇이고 하루 10mg은 시금치 몇 g인가"
-description: ""
+description: "루테인이 가장 많은 식품은 생시금치로 100g당 루테인과 지아잔틴 합계가 12,200µg이며, 이 한 접시로 식약처 일일섭취량 하한 10mg의 122%가 채워진다."
 pubDate: 2026-09-17
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/lutein-rich-foods-spinach-daily-amount/lutein-rich-foods-spinach-daily-amount-main.webp

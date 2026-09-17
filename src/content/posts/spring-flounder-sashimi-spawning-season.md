@@ -1,6 +1,6 @@
 ---
 title: "봄도다리 회가 제일 맛있다는 말, 산란기 자료로 보면 맞나"
-description: ""
+description: "봄에 먹는 도다리 회가 살이 가장 오른 회라는 근거는 없고, 국립수산과학원 자료로 이 종의 산란기는 가을에서 겨울이며 시장에서 같은 이름으로 파는 문치가자미는 12월부터 5월까지 산란한다."
 pubDate: 2026-09-17
 category: fish
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/spring-flounder-sashimi-spawning-season/spring-flounder-sashimi-spawning-season-main.webp

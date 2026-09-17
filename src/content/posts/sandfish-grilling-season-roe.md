@@ -1,6 +1,6 @@
 ---
 title: "도루묵 구이 철은 언제이고 알도루묵은 어떻게 구워야 하나"
-description: ""
+description: "도루묵 구이가 가장 맛있는 때는 알이 차는 11월에서 12월이며, 국립수산과학원은 산란성기를 12월로 적고 해양수산부는 2022년 11월 이달의 수산물로 이 생선을 골랐다."
 pubDate: 2026-09-17
 category: fish
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/sandfish-grilling-season-roe/sandfish-grilling-season-roe-main.webp

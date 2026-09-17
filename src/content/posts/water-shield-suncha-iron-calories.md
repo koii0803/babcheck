@@ -1,6 +1,6 @@
 ---
 title: "순채 효능, 22kcal에 철분 하루치 절반이면 어디에 좋나?"
-description: ""
+description: "식약처 데이터베이스 기준 순채 생것 100g의 열량은 22kcal이고 칼슘은 171mg, 철분은 6.9mg이다."
 pubDate: 2026-09-17
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/water-shield-suncha-iron-calories/water-shield-suncha-iron-calories-main.webp

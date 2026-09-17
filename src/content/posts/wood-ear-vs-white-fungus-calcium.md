@@ -1,6 +1,6 @@
 ---
 title: "목이버섯 효능, 검은 것과 흰 것 중 칼슘은 어느 쪽이 9배인가?"
-description: ""
+description: "식약처 식품영양성분 데이터베이스 기준 검은 목이버섯 생것 100g의 칼슘은 45mg으로 흰목이버섯의 9배이고, 칼륨은 흰 쪽이 361mg으로 검은 쪽의 6.6배다."
 pubDate: 2026-09-17
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/wood-ear-vs-white-fungus-calcium/wood-ear-vs-white-fungus-calcium-main.webp

@@ -1,6 +1,6 @@
 ---
 title: "차조기 잎이 알레르기 비염에 효과 있다는 근거는 무엇인가"
-description: ""
+description: "차조기 잎이 알레르기비염에 효과가 있다는 인체 근거는 2004년 무작위 대조시험 1건이며, 그 시험은 잎이 아니라 로즈마린산을 높인 추출물을 하루 50mg에서 200mg씩 21일 먹인 것이다."
 pubDate: 2026-09-17
 category: veg
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/perilla-leaf-allergic-rhinitis-evidence/perilla-leaf-allergic-rhinitis-evidence-main.webp

@@ -17,3 +17,21 @@ jobs:
           git config user.email "koii0803@users.noreply.github.com"
           git commit --allow-empty -m "daily rebuild $(date -u +%F)"
           git push
+  # 빌드가 끝나 글이 열린 뒤, 오늘 공개된 글 주소를 Google Indexing API에 알린다.
+  # 키(GOOGLE_INDEXING_KEY 시크릿)가 없으면 조용히 건너뛴다.
+  index:
+    needs: bump
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q google-auth requests
+      - name: Cloudflare 빌드 기다리기
+        run: sleep 300
+      - env:
+          GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
+        run: |
+          if [ -z "$GOOGLE_INDEXING_KEY" ]; then echo "키 없음, 건너뜀"; exit 0; fi
+          python scripts/gindex.py
