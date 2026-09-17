@@ -100,16 +100,14 @@ A. 없습니다. 냄새와 색으로 구분되지 않고 가열해도 사라지�
 
 이번 주에 갯벌에 나갈 계획이라면 호미 하나만 챙기고, 출발 전에 그 해역의 패류독소 발생 공지부터 확인하면 됩니다.
 
-서울특별시 보건환경연구원 패류독소 식중독 알면 예방할 수 있다<br>해양수산부 서해어업관리단 불법어업 안내<br>순천시 순천만 갯벌 생물 사전 살조개<br>식품의약품안전처 식품영양성분데이터베이스<br>미국 식품의약국 Selecting and Serving Fresh and Frozen Seafood Safely
-
 함께 읽기: [고둥 삶는법과 먹는 방법, 몇 분 삶아야 질기지 않나](/posts/sea-snail-boiling-time-how-to-eat) / [대수리 삶는법, 몇 분이 아니라 85℃가 기준인 이유는?](/posts/daesuri-sea-snail-boiling-temperature) / [고둥회 먹기 전 타액선을 떼야 하는 이유는 무엇인가](/posts/sea-snail-sashimi-salivary-gland-tetramine)
 
 ## 출처
 
-- <https://sihe.seoul.go.kr/archives/550221>
-- <https://westship.mof.go.kr/ko/page.do?menuIdx=495>
-- <https://scbay.suncheon.go.kr/wetland/story/0010/0001/>
-- <https://various.foodsafetykorea.go.kr/nutrient/>
-- <https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely>
+- [서울특별시 보건환경연구원 패류독소 식중독 알면 예방할 수 있다](https://sihe.seoul.go.kr/archives/550221)
+- [해양수산부 서해어업관리단 불법어업 안내](https://westship.mof.go.kr/ko/page.do?menuIdx=495)
+- [순천시 순천만 갯벌 생물 사전 살조개](https://scbay.suncheon.go.kr/wetland/story/0010/0001/)
+- [식품의약품안전처 식품영양성분데이터베이스](https://various.foodsafetykorea.go.kr/nutrient/)
+- [미국 식품의약국 Selecting and Serving Fresh and Frozen Seafood Safely](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely)
 
 <div class="ad-slot" data-slot="bottom"></div>

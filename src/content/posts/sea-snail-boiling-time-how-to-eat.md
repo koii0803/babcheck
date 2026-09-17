@@ -102,16 +102,14 @@ A. 해양수산부 자료는 물레고둥 계열의 제철을 7월로 적고 있
 
 오늘 한 접시를 준비한다면 삶는 시간을 재기보다, 살을 반으로 갈라 타액선을 떼어냈는지부터 확인하면 됩니다.
 
-해양수산부 수산물안전정보서비스 가을철 특히 조심해야 할 소라독<br>해양수산부 수산물안전정보서비스 맥주가 사랑하는 골뱅이<br>식품의약품안전처 비브리오패혈증균 예측시스템<br>식품의약품안전처 식품영양성분데이터베이스<br>미국 식품의약국 Selecting and Serving Fresh and Frozen Seafood Safely
-
 함께 읽기: [새꼬막효능, 참꼬막과 새꼬막의차이 영양도 다른가](/posts/ark-clam-vs-blood-cockle-nutrition) / [대수리 삶는법, 몇 분이 아니라 85℃가 기준인 이유는?](/posts/daesuri-sea-snail-boiling-temperature) / [고둥회 먹기 전 타액선을 떼야 하는 이유는 무엇인가](/posts/sea-snail-sashimi-salivary-gland-tetramine)
 
 ## 출처
 
-- <https://fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=28390&select_list_no=8>
-- <https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0301&cnts_id=21595>
-- <https://vibrio.foodsafetykorea.go.kr/info.do?tab=2>
-- <https://various.foodsafetykorea.go.kr/nutrient/>
-- <https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely>
+- [해양수산부 수산물안전정보서비스 가을철 특히 조심해야 할 소라독](https://fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=28390&select_list_no=8)
+- [해양수산부 수산물안전정보서비스 맥주가 사랑하는 골뱅이](https://www.fsis.go.kr/front/contents/cmsView.do?cate_id=0301&cnts_id=21595)
+- [식품의약품안전처 비브리오패혈증균 예측시스템](https://vibrio.foodsafetykorea.go.kr/info.do?tab=2)
+- [식품의약품안전처 식품영양성분데이터베이스](https://various.foodsafetykorea.go.kr/nutrient/)
+- [미국 식품의약국 Selecting and Serving Fresh and Frozen Seafood Safely](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely)
 
 <div class="ad-slot" data-slot="bottom"></div>
