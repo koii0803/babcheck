@@ -87,14 +87,12 @@ draft: false
 
 **Q. 대수리 삶는법에서 소금물 농도는 얼마가 맞나**<br>A. 공식 자료에 농도 지침은 없다. 해수부 자료는 소금물에 삶는다고만 적고 있으며, 확인된 수치는 85℃ 이상 하나다.<br>**Q. 삶기 전에 냉장 보관은 몇 도로 해야 하나**<br>A. 5℃ 이하다. 식약처 비브리오패혈증균 예측시스템이 어패류 보관 조건으로 제시하는 값이다.<br>**Q. 소라 손질법과 같은 방식으로 해도 되나**<br>A. 같은 방식이다. 같은 뿔소라과이고 둘 다 육식성이라 침샘을 제거해야 하는 점이 같다. 다만 각고 30mm 정도로 소라보다 훨씬 작다.<br>오늘 한 소쿠리를 삶는다면 타이머 대신 살을 반으로 갈라 침샘을 떼어냈는지부터 확인하면 된다. 대수리 삶는법의 핵심은 온도와 손질 두 가지에서 끝난다.
 
-국립생물자원관 한국의 무척추동물 복족류 V 뿔소라과<br>해양수산부 수산물안전정보서비스 가을철 특히 조심해야 할 소라독<br>식품의약품안전처 비브리오패혈증균 예측시스템<br>식품의약품안전처 식품영양성분데이터베이스<br>미국 식품의약국 Selecting and Serving Fresh and Frozen Seafood Safely
-
 ## 출처
 
-- <https://www.nibr.go.kr/aiibook/catImage/242/Invertebrate%20fauna%20of%20korea%2019_6.pdf>
-- <https://fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=28390&select_list_no=8>
-- <https://vibrio.foodsafetykorea.go.kr/info.do?tab=2>
-- <https://various.foodsafetykorea.go.kr/nutrient/>
-- <https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely>
+- [국립생물자원관 한국의 무척추동물 복족류 V 뿔소라과](https://www.nibr.go.kr/aiibook/catImage/242/Invertebrate%20fauna%20of%20korea%2019_6.pdf)
+- [해양수산부 수산물안전정보서비스 가을철 특히 조심해야 할 소라독](https://fsis.go.kr/front/contents/cmsView.do?cate_id=0101&cnts_id=28390&select_list_no=8)
+- [식품의약품안전처 비브리오패혈증균 예측시스템](https://vibrio.foodsafetykorea.go.kr/info.do?tab=2)
+- [식품의약품안전처 식품영양성분데이터베이스](https://various.foodsafetykorea.go.kr/nutrient/)
+- [미국 식품의약국 Selecting and Serving Fresh and Frozen Seafood Safely](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely)
 
 <div class="ad-slot" data-slot="bottom"></div>

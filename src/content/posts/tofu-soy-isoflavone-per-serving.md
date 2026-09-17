@@ -36,8 +36,6 @@ draft: false
 
 ![콩을 삶고 갈고 굳히면 얼마나 줄어드나](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tofu-soy-isoflavone-per-serving/tofu-soy-isoflavone-per-serving-1.webp)
 
-![콩을 삶고 갈고 굳히면 얼마나 줄어드나](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tofu-soy-isoflavone-per-serving/tofu-soy-isoflavone-per-serving-1.webp)
-
 | 가공 단계 | 품목 | 100g당 값 | 생콩 대비 잔존율 |
 | --- | --- | --- | --- |
 | 말린 콩 | 콩, 생것 | 154.53mg | 1배 |
@@ -56,8 +54,6 @@ draft: false
 ## 4. 낫토와 된장 같은 발효 콩은 왜 값이 다른가
 
 **발효 콩은 같은 무게에서 낫토 82.29mg, 템페 60.61mg, 미소 된장 41.45mg으로 굳힌 것보다 높다.** 농무부 자료에서 낫토는 생콩 다음으로 값이 크고, 삶은 콩 65.11mg보다도 17mg 많다. 콩 한 알을 통째로 발효시키는 낫토와 템페는 물을 넣어 갈거나 굳히는 공정을 거치지 않아 원료가 그대로 남기 때문이다. 다만 미소 된장은 한 번에 15g 안팎을 쓰므로 한 끼로는 6mg에 그친다. 국 한 그릇으로 하루 값을 채우기는 어렵다.
-
-![낫토와 된장 같은 발효 콩은 왜 값이 다른가](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tofu-soy-isoflavone-per-serving/tofu-soy-isoflavone-per-serving-2.webp)
 
 ![낫토와 된장 같은 발효 콩은 왜 값이 다른가](https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/tofu-soy-isoflavone-per-serving/tofu-soy-isoflavone-per-serving-2.webp)
 
