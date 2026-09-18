@@ -67,10 +67,10 @@ draft: false
 
 ## 출처
 
-- [스포츠조선 2026 축구와 빵, 특별한 만남 충북청주FC, 포이드캐롯 브랜드데이 성료](https://www.chosun.com/sports/football/2026/08/26/G4YGMY3FMJRDKMLFGAZTENTBGU/)
-- [식품의약품안전처 2026 건강기능식품의 기준 및 규격 고시전문(제2026-43호)](https://www.mfds.go.kr/brd/m_211/view.do?seq=14973)
+- [스포츠조선](https://www.chosun.com/sports/football/2026/08/26/G4YGMY3FMJRDKMLFGAZTENTBGU/)
+- [식품의약품안전처](https://www.mfds.go.kr/brd/m_211/view.do?seq=14973)
 - [식품의약품안전처 식품영양성분데이터베이스](https://various.foodsafetykorea.go.kr/nutrient/)
-- [표시광고법 시행규칙 별표 5 1일 영양성분 기준치](https://law.go.kr/flDownload.do?flSeq=76612387)
-- [미국 국립보완통합보건센터 2022 Red Yeast Rice](https://www.nccih.nih.gov/health/red-yeast-rice)
+- [표시광고법 시행규칙](https://law.go.kr/flDownload.do?flSeq=76612387)
+- [미국 국립보완통합보건센터](https://www.nccih.nih.gov/health/red-yeast-rice)
 
 <div class="ad-slot" data-slot="bottom"></div>

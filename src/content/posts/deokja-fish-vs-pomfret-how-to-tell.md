@@ -66,14 +66,12 @@ draft: false
 
 **Q. 둘은 같은 바다에서 잡히나**<br>A. 그렇다. 국립생물자원관 설명으로는 둘 다 서해와 남해의 대륙붕 모래나 개펄 바닥에 살며, 산란기도 5~7월과 5~8월로 겹친다.<br>**Q. 덕자의 영양성분은 따로 나와 있나**<br>A. 없다. 식품의약품안전처 식품영양성분데이터베이스에는 병어 분석값 두 줄만 있고 상대는 없어, 100g당 95~130kcal 범위로 가늠한다.<br>**Q. 낫꼴 쪽은 왜 살아 있는 것을 보기 어렵나**<br>A. 국립생물자원관 설명은 이 어종이 잡히는 즉시 스트레스로 죽어 살아 있는 개체를 보기 어렵다고 적었다. 좌판의 그 생선이 전부 죽어 있는 이유다.<br>오늘 좌판에서 이 생선을 집어 들면 뒷지느러미가 낫처럼 휘었는지 한 번 확인하고, 휘지 않았는데 비싼 값이면 그 자리에서 값을 다시 묻는다.
 
-국립수산과학원 2021 보도자료 서로 닮은 듯 다른 병어와 덕대, 이렇게 구별하세요<br>국립생물자원관 한반도의 생물다양성 덕대<br>국립생물자원관 한반도의 생물다양성 병어<br>식품의약품안전처 식품영양성분데이터베이스<br>유엔식량농업기구 Fishery of Shared Stock of the Silver Pomfret, Pampus argenteus
-
 ## 출처
 
-- <https://www.nifs.go.kr/news/actionNewsView.do?MENU_ID=M0000307&NEWS_SEQ=3921>
-- <https://species.nibr.go.kr/species-detail/120000059209>
-- <https://species.nibr.go.kr/species-detail/120000059207>
-- <https://various.foodsafetykorea.go.kr/nutrient/>
-- <https://www.fao.org/4/Y4652E/y4652e05.htm>
+- [국립수산과학원](https://www.nifs.go.kr/news/actionNewsView.do?MENU_ID=M0000307&NEWS_SEQ=3921)
+- [국립생물자원관](https://species.nibr.go.kr/species-detail/120000059209)
+- [국립생물자원관](https://species.nibr.go.kr/species-detail/120000059207)
+- [식품의약품안전처 식품영양성분데이터베이스](https://various.foodsafetykorea.go.kr/nutrient/)
+- [유엔식량농업기구](https://www.fao.org/4/Y4652E/y4652e05.htm)
 
 <div class="ad-slot" data-slot="bottom"></div>
