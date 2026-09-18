@@ -1,7 +1,7 @@
 ---
 title: "청주 홍국쌀식빵은 왜 붉은가, 열량과 콜레스테롤 효과는"
 description: "청주 홍국쌀식빵의 붉은색은 쌀에 홍국균을 접종해 발효시킨 빨간 쌀에서 오고, 시판품 100g의 열량은 314kcal, 나트륨은 321mg이다."
-pubDate: 2026-09-19
+pubDate: 2026-09-18
 category: ferment
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/cheongju-red-yeast-rice-bread-calories/cheongju-red-yeast-rice-bread-calories-main.webp
 tags: ["홍국쌀식빵", "청주홍국쌀식빵", "홍국쌀", "홍국빵", "홍국식빵", "홍국쌀빵", "모나콜린K", "홍국균", "콜레스테롤", "포이드캐롯", "청주빵집", "홍국쌀식빵칼로리", "홍국쌀식빵나트륨", "홍국주의사항", "건강기능식품"]

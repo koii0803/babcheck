@@ -1,7 +1,7 @@
 ---
 title: "덕자 생선은 병어인가 덕대인가, 좌판에서 가르는 기준은"
 description: "덕자는 서해와 남해 일부 지역에서 덕대를 부르는 이름이고, 덕대와 병어는 DNA 바코드 일치율이 88%로 같은 종 기준인 99%에 못 미치는 별개 어종이다."
-pubDate: 2026-09-19
+pubDate: 2026-09-18
 category: fish
 thumbnail: https://pub-71a067f62c754bb0b68600c1ca0758c9.r2.dev/babcheck/deokja-fish-vs-pomfret-how-to-tell/deokja-fish-vs-pomfret-how-to-tell-main.webp
 tags: ["덕자", "덕자생선", "덕대", "병어", "덕자병어", "덕자덕대", "병어덕대구별", "뒷지느러미", "병어과", "병어영양", "병어열량", "병어단백질", "병어구이", "병어찌개", "여름제철생선"]
