@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
@@ -15,6 +16,24 @@
   --color-moss: #0f6b55;
   --color-moss-2: #0b5443;
   --color-moss-soft: #e3efe9;
+  --color-card: #ffffff;
+  --color-row: #fcfbf8;
+}
+
+/* 다크모드: html.dark 에서 토큰만 뒤집는다 (Base.astro 헤더 토글) */
+html.dark {
+  color-scheme: dark;
+  --color-ink: #ece9e1;
+  --color-ink-2: #b5b0a5;
+  --color-ink-3: #837e74;
+  --color-paper: #191816;
+  --color-paper-2: #22211e;
+  --color-line: #34322d;
+  --color-moss: #4fb894;
+  --color-moss-2: #6fcaab;
+  --color-moss-soft: #1d3a31;
+  --color-card: #201f1c;
+  --color-row: #1d1c19;
 }
 
 html { scroll-behavior: smooth; }
@@ -36,14 +55,14 @@ body {
 .logo { font-family: 'LogoFlower', var(--font-serif); -webkit-text-stroke: 0.03em currentColor; letter-spacing: -0.01em; }
 .eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-moss; }
 .card {
-  @apply rounded-2xl border border-line bg-white transition duration-300;
+  @apply rounded-2xl border border-line bg-card transition duration-300;
   box-shadow: 0 1px 2px rgba(27, 26, 23, 0.04);
 }
 .card:hover { box-shadow: 0 14px 40px -18px rgba(27, 26, 23, 0.25); transform: translateY(-2px); }
 .thumb-fallback {
   background:
-    radial-gradient(120% 90% at 0% 0%, #dcebe3 0%, transparent 55%),
-    radial-gradient(100% 80% at 100% 100%, #f3e9d4 0%, transparent 55%),
+    radial-gradient(120% 90% at 0% 0%, var(--color-moss-soft) 0%, transparent 55%),
+    radial-gradient(100% 80% at 100% 100%, var(--color-paper-2) 0%, transparent 55%),
     var(--color-paper-2);
 }
 
@@ -73,7 +92,7 @@ body {
 .article h3 { @apply mt-9 mb-3 text-xl font-bold; }
 .article a { @apply underline decoration-moss/40 underline-offset-4 hover:decoration-moss; }
 .article strong { @apply font-semibold; }
-.article blockquote { @apply not-italic bg-white rounded-xl border border-line border-l-4 border-l-moss px-6 py-4 my-8; }
+.article blockquote { @apply not-italic bg-card rounded-xl border border-line border-l-4 border-l-moss px-6 py-4 my-8; }
 .article blockquote p { @apply my-0; }
 .article ul > li::marker { color: var(--color-moss); }
 .article img { @apply rounded-2xl border border-line my-8; }
@@ -87,7 +106,7 @@ body {
   @apply bg-paper-2 text-ink font-semibold whitespace-nowrap px-4 py-3 text-left;
 }
 .article table tbody td { @apply px-4 py-3 align-top border-t border-line; }
-.article table tbody tr:nth-child(even) td { background: #fcfbf8; }
+.article table tbody tr:nth-child(even) td { background: var(--color-row); }
 .article table thead th:first-child { border-top-left-radius: 12px; }
 .article table thead th:last-child { border-top-right-radius: 12px; }
 .article table tbody tr:last-child td:first-child { border-bottom-left-radius: 12px; }

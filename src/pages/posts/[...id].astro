@@ -59,13 +59,13 @@ const jsonLd = {
   {d.tags.length > 0 && (
     <nav class="mx-auto mt-10 max-w-3xl px-5">
       <ul class="flex flex-wrap gap-2">
-        {d.tags.map((t) => <li><a href={`/tag/${t}`} class="inline-block rounded-full border border-line bg-white px-3 py-1 text-xs text-ink-2 hover:border-moss hover:text-moss">#{t}</a></li>)}
+        {d.tags.map((t) => <li><a href={`/tag/${t}`} class="inline-block rounded-full border border-line bg-card px-3 py-1 text-xs text-ink-2 hover:border-moss hover:text-moss">#{t}</a></li>)}
       </ul>
     </nav>
   )}
 
   <aside class="mx-auto mt-10 max-w-3xl px-5">
-    <div class="rounded-2xl border border-line bg-white px-6 py-5 text-sm leading-relaxed text-ink-2">
+    <div class="rounded-2xl border border-line bg-card px-6 py-5 text-sm leading-relaxed text-ink-2">
       이 글은 일반 정보 제공 목적이며 진단·치료·처방을 대신하지 않습니다. 질병이 있거나 약을 복용 중이면 식단을 바꾸기 전에 의사·약사와 상담하세요.
     </div>
   </aside>
