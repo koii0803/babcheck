@@ -1,10 +1,10 @@
 ---
-// 모바일: 둥근 아이콘 5개 한 줄. PC: 사진 타일 5개.
+// 모바일: 둥근 아이콘 4개씩 두 줄. PC: 사진 타일 4개씩 두 줄. (분류 8개, 2026-09-20)
 import { CATEGORIES } from '../site';
 const { counts = {} as Record<string, number>, showCount = true } = Astro.props;
 const entries = Object.entries(CATEGORIES);
 ---
-<div class="grid grid-cols-5 gap-2 md:hidden">
+<div class="grid grid-cols-4 gap-2 md:hidden">
   {entries.map(([slug, c]) => (
     <a href={`/category/${slug}`} class="flex flex-col items-center gap-1.5 text-center">
       <span class="block h-14 w-14 overflow-hidden rounded-full border-2 border-white shadow-md ring-1 ring-line">
@@ -15,7 +15,7 @@ const entries = Object.entries(CATEGORIES);
     </a>
   ))}
 </div>
-<div class="hidden gap-4 md:grid md:grid-cols-5">
+<div class="hidden gap-4 md:grid md:grid-cols-4">
   {entries.map(([slug, c]) => (
     <a href={`/category/${slug}`} class="card group relative aspect-[3/4] overflow-hidden">
       <img src={c.image} alt="" class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />

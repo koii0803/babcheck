@@ -9,7 +9,7 @@ export const SITE = {
   ogImage: '/img/og-default.jpg',
 };
 
-// 분류 5개. 글 머리말의 category 칸에 slug(왼쪽 키)를 적는다.
+// 분류 8개 (2026-09-20 곡물·과일·고기 추가). 글 머리말의 category 칸에 slug(왼쪽 키)를 적는다.
 export const CATEGORIES: Record<string, { name: string; short: string; desc: string; image: string }> = {
   fish: {
     name: '제철 연안 생선',
@@ -40,6 +40,25 @@ export const CATEGORIES: Record<string, { name: string; short: string; desc: str
     short: '발효',
     desc: '삭힌 냄새는 안전한지, 비슷한 것과 어떻게 가려내는지.',
     image: '/img/cat-ferment.webp',
+  },
+  // 아래 3개 사진은 임시(채소·생선 사진 복사) — 교체 필요 (2026-09-20)
+  grain: {
+    name: '곡물·콩·견과',
+    short: '곡물·견과',
+    desc: '얼마나 불리고 어떻게 볶는지, 한 줌이 몇 칼로리인지.',
+    image: '/img/cat-grain.webp',
+  },
+  fruit: {
+    name: '제철 과일',
+    short: '과일',
+    desc: '언제가 제철인지, 당은 얼마나 되는지, 씨와 껍질은 먹어도 되는지.',
+    image: '/img/cat-fruit.webp',
+  },
+  meat: {
+    name: '고기·알',
+    short: '고기·알',
+    desc: '부위별 지방은 얼마인지, 어느 온도까지 익혀야 안전한지.',
+    image: '/img/cat-meat.webp',
   },
 };
 

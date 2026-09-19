@@ -9,11 +9,11 @@ const counts = posts.reduce((m, p) => ((m[p.data.category] = (m[p.data.category]
 const byCat = (slug: string) =>
   posts.filter((p) => p.data.category === slug).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 4);
 ---
-<Base title="대도감" description="제철 수산물과 천연 식재료를 다섯 갈래로 나눠 안내합니다." image={SITE.ogImage}>
+<Base title="대도감" description="제철 수산물과 천연 식재료를 여덟 갈래로 나눠 안내합니다." image={SITE.ogImage}>
   <section class="mx-auto max-w-6xl px-5 pt-10 md:pt-20">
     <p class="eyebrow">Guide</p>
     <h1 class="serif mt-3 break-keep text-[2rem] font-bold leading-tight md:text-[2.9rem]">대도감</h1>
-    <p class="mt-4 max-w-2xl text-[1.02rem] leading-relaxed text-ink-2 md:text-lg">제철 수산물과 천연 식재료를 다섯 갈래로 나눴습니다. 궁금한 쪽을 고르세요.</p>
+    <p class="mt-4 max-w-2xl text-[1.02rem] leading-relaxed text-ink-2 md:text-lg">제철 수산물과 천연 식재료를 여덟 갈래로 나눴습니다. 궁금한 쪽을 고르세요.</p>
     <div class="mt-8">
       <CategoryStrip counts={counts} />
     </div>

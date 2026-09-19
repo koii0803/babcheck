@@ -5,7 +5,7 @@ import { glob } from 'astro/loaders';
 //   title:       제목
 //   description: 한 줄 요약 (첫 굵은 문단)
 //   pubDate:     2026-09-14  (발행일. 오늘 이후면 그날까지 숨김)
-//   category:    fish | veg | oil | shell | ferment
+//   category:    fish | veg | oil | shell | ferment | grain | fruit | meat
 //   thumbnail:   대표 이미지 주소 (없으면 분류 사진)
 //   tags:        [태그, …]  글 끝에 칩으로 보임
 //   notion_id:   노션 페이지 id (중복 방어)
